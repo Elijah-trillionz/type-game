@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="../img/wallpaper.jpg" />
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <h2>Typing Fast</h2>
+        </div>
+        <div class="difficulty">
+          <select>
+            <option name="easy" id="easy">Easy</option>
+            <option name="hard" id="hard">Hard</option>
+            <option name="hard2" id="hard2">Very Hard</option>
+          </select>
+        </div>
+      </div>
+      <div class="body">
+        <div>
+          <div class="get-started">
+            <div class="other">
+              <h2>Get Started</h2>
+            </div>
+          </div>
+          <div class="game-container">
+            <div class="score">
+              <span class="mother">Score: </span>
+              <span id="score">0</span>
+            </div>
+            <div class="game-struct">
+              <div class="words">
+                <span class="mother">Word: </span>
+                <span id="words">Nametology</span>
+              </div>
+              <div class="timer">
+                <span class="mother">Time: </span>
+                <span id="seconds">9s</span>
+              </div>
+            </div>
+            <div class="my-input">
+              <h4></h4>
+            </div>
+            <div class="input">
+              <form name="myform">
+                <input
+                  type="text"
+                  placeholder="Text Goes here"
+                  id="input"
+                  autocomplete="language"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
