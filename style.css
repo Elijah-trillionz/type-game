@@ -70,8 +70,8 @@ img {
   color: white;
 }
 #score {
-	color: white;
-	font-size: 17px;
+  color: white;
+  font-size: 17px;
 }
 .mother {
   font-size: 22px;
@@ -94,6 +94,62 @@ img {
   border: 1px solid #f4f4f4;
   outline: none;
   background: #f4f4f4;
+}
+.game-over {
+  display: flex;
+  justify-content: center;
+}
+.game-over-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 7px;
+  transition: 0.4s ease-in;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 20;
+}
+.game-over-content.active {
+  animation: none;
+  max-height: 500px;
+  opacity: 1;
+}
+.game-over-content h3 {
+  padding: 5px;
+}
+.game-over-content button {
+  padding: 10px 15px;
+  width: 100%;
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  display: none;
+}
+.body-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.2);
+}
+.body-container.active {
+  opacity: 1;
+  pointer-events: all;
 }
 @media only screen and (min-width: 728px) {
   .body {
